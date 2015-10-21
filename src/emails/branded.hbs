@@ -4,35 +4,33 @@ subject: Branded transaction email example
 ---
 <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
 <div class="header">
-  <table>
-    <tr>
-      <td class="align-center">
-        <a href="http://www.mailgun.com"><img src="../src/img/mailgun.png" height="50" alt="Mailgun"></a>
-      </td>
-    </tr>
+  <!-- MAIN BLOCK (devicewidth vs devicewidthinner) -->
+  <table class="backgroundTable">
+    <tbody>
+      <tr>
+        <td>
+          <table width="600" align="center" cellpadding="0" cellspacing="0" border="0" class="main">
+            <tbody>
+              <tr>
+                <td>
+                  <!-- TEXT CONTENT TABLE -->
+                  <table cellpadding="10" align="center">
+                    <tbody>
+                      <tr>
+                        <td>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- END OF TEXT CONTENT TABLE -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
   </table>
-</div>
-<table class="main">
-  <tr>
-    <td class="wrapper">
-      <table>
-        <tr>
-          <td>
-            <p>Example of an email with image asset.</p>
-            <p>You should upload your email images to a CDN, or for smaller file sizes you can also inline them.</p>
-            <p>Should come in handy for branded transactional emails or promotional type emails.</p>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<div class="footer">
-  <table>
-    <tr>
-      <td class="align-center">
-        <p>{{> follow_lee }}</p>
-      </td>
-    </tr>
-  </table>
+  <!-- END   OF MAIN BLOCK -->
 </div>

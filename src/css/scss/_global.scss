@@ -1,19 +1,13 @@
 /* -------------------------------------
     GLOBAL RESETS
 ------------------------------------- */
-
-table,
-td,
-div,
-a {
+table, td, div, a {
   box-sizing: border-box;
 }
-
 img {
   -ms-interpolation-mode: bicubic;
   max-width: 100%;
 }
-
 body {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,31 +20,22 @@ body {
   -webkit-text-size-adjust: 100%;
   width: 100% !important;
 }
-
 // Let's make sure all tables have defaults
 table {
   border-collapse: separate !important;
   mso-table-lspace: 0pt;
   mso-table-rspace: 0pt;
-  width: 100%;
-
-  td {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 14px;
-    vertical-align: top;
-  }
 }
-
+td {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  vertical-align: top;
+  border-collapse: collapse;
+}
 // External class fix for Outlook.com
 .ExternalClass {
   width: 100%;
 }
-
-.ExternalClass,
-.ExternalClass p,
-.ExternalClass span,
-.ExternalClass font,
-.ExternalClass td,
-.ExternalClass div {
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
   line-height: 100%;
 }
