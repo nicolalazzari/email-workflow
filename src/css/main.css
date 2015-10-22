@@ -2,6 +2,45 @@
     CONFIGURE YOUR VARIABLES
 ------------------------------------- */
 /* -------------------------------------
+    GLOBAL RESETS
+------------------------------------- */
+table, td, div, a {
+  box-sizing: border-box; }
+
+img {
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%; }
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  height: 100% !important;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  width: 100% !important; }
+
+table {
+  border-collapse: separate !important;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt; }
+
+td {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  vertical-align: top;
+  border-collapse: collapse; }
+
+.ExternalClass {
+  width: 100%; }
+
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+  line-height: 100%; }
+
+/* -------------------------------------
     TYPOGRAPHY
 ------------------------------------- */
 h1,
@@ -47,6 +86,49 @@ ol {
 a {
   color: #348eda;
   text-decoration: underline; }
+
+/* -------------------------------------
+    BUTTONS
+------------------------------------- */
+.btn {
+  width: 100%; }
+  .btn > tr > td {
+    padding-bottom: 15px; }
+  .btn table {
+    width: auto; }
+  .btn table td {
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center; }
+  .btn a {
+    background-color: #ffffff;
+    border: solid 1px #348eda;
+    border-radius: 5px;
+    color: #348eda;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 12px 25px;
+    text-decoration: none !important;
+    text-transform: capitalize; }
+
+.btn-primary table td {
+  background-color: #348eda; }
+
+.btn-primary a {
+  background-color: #348eda;
+  border-color: #348eda;
+  color: #ffffff; }
+
+.btn-secondary table td {
+  background-color: transparent; }
+
+.btn-secondary a {
+  background-color: transparent;
+  border-color: #348eda;
+  color: #348eda; }
 
 /* -------------------------------------
     OTHER STYLES THAT MIGHT BE USEFUL
@@ -192,7 +274,7 @@ RESPONSIVE AND MOBILE FRIENDLY STYLES
     color: #0a8cce !important;
     pointer-events: auto;
     cursor: default; }
-  table[class=devicewidth] {
+  table[class=container] {
     width: 440px !important;
     text-align: center !important; }
   table[class=devicewidthinner] {
@@ -224,7 +306,7 @@ RESPONSIVE AND MOBILE FRIENDLY STYLES
     color: #0a8cce !important;
     pointer-events: auto;
     cursor: default; }
-  table[class=devicewidth] {
+  table[class=container] {
     width: 280px !important;
     text-align: center !important; }
   table[class=tableImage] {
@@ -252,11 +334,11 @@ RESPONSIVE AND MOBILE FRIENDLY STYLES
 
 /* Force Outlook to provide a "view in browser" menu link. */
 body {
-  width: 100% !important;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  margin: 0;
-  padding: 0; }
+  background-color: #CCCCCC; }
+
+.body {
+  background-color: #CCCCCC;
+  width: 100%; }
 
 /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
 .ExternalClass {
@@ -265,13 +347,21 @@ body {
   .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
     line-height: 100%; }
 
-/* Force Hotmail to display emails at full width */
-/* Force Hotmail to display normal line spacing.*/
 #backgroundTable {
   margin: 0;
   padding: 0;
   width: 100% !important;
   line-height: 100% !important; }
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display: block;
+  margin: 0 auto !important;
+  /* makes it centered */
+  max-width: 580px;
+  padding: 0px;
+  width: auto !important;
+  width: 580px; }
 
 img {
   outline: none;
@@ -307,88 +397,3 @@ table[class=full] {
 
 h1 {
   font-size: 26px; }
-
-/* ANIMATION */
-.fadeInDown {
-  animation-name: fadeInDown;
-  -webkit-animation-name: fadeInDown;
-  animation-duration: 1.2s;
-  -webkit-animation-duration: 1.2s; }
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px); }
-  40% {
-    opacity: 0;
-    transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  40% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0); } }
-
-.fadeInDown2 {
-  animation-name: fadeInDown2;
-  -webkit-animation-name: fadeInDown2;
-  animation-duration: 1.6s;
-  -webkit-animation-duration: 1.6s; }
-
-@keyframes fadeInDown2 {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px); }
-  50% {
-    opacity: 0;
-    transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@-webkit-keyframes fadeInDown2 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0); } }
-
-.fadeInDown3 {
-  animation-name: fadeInDown3;
-  -webkit-animation-name: fadeInDown3;
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s; }
-
-@keyframes fadeInDown3 {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px); }
-  60% {
-    opacity: 0;
-    transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@-webkit-keyframes fadeInDown3 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  60% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0); } }

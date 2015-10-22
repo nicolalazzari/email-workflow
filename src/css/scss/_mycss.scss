@@ -7,13 +7,12 @@
 /* Force Outlook to provide a "view in browser" menu link. */
 
 body {
-  width: 100% !important;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  margin: 0;
-  padding: 0;
+  background-color: $grey;
 }
-
+.body {
+  background-color: $grey;
+  width: 100%;
+}
 /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
 
 .ExternalClass {
@@ -24,15 +23,22 @@ body {
   }
 }
 
-/* Force Hotmail to display emails at full width */
-
-/* Force Hotmail to display normal line spacing.*/
 
 #backgroundTable {
   margin: 0;
   padding: 0;
   width: 100% !important;
   line-height: 100% !important;
+}
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display: block;
+  margin: 0 auto !important; /* makes it centered */
+  max-width: $width;
+  padding: 0px;
+  width: auto !important;
+  width: $width;
 }
 
 img {
@@ -82,132 +88,3 @@ h1 {
 
 
 
-/* ANIMATION */
-
-.fadeInDown {
-  animation-name: fadeInDown;
-  -webkit-animation-name: fadeInDown;
-  animation-duration: 1.2s;
-  -webkit-animation-duration: 1.2s;
-}
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-
-  40% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-  }
-
-  40% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
-
-
-.fadeInDown2 {
-  animation-name: fadeInDown2;
-  -webkit-animation-name: fadeInDown2;
-  animation-duration: 1.6s;
-  -webkit-animation-duration: 1.6s;
-}
-
-@keyframes fadeInDown2 {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-
-  50% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-@-webkit-keyframes fadeInDown2 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-  }
-
-  50% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
-
-
-.fadeInDown3 {
-  animation-name: fadeInDown3;
-  -webkit-animation-name: fadeInDown3;
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-}
-
-@keyframes fadeInDown3 {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-
-  60% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-@-webkit-keyframes fadeInDown3 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-  }
-
-  60% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
