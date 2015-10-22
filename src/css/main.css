@@ -87,68 +87,96 @@ a {
   visibility: hidden;
   width: 0; }
 
-/* Client-specific Styles */
-#outlook a {
-  padding: 0; }
+/* -------------------------------------
+  ANIMATION
+------------------------------------- */
+.fadeInDown {
+  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+  animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s; }
 
-/* Force Outlook to provide a "view in browser" menu link. */
-body {
-  width: 100% !important;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  margin: 0;
-  padding: 0; }
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px); }
+  40% {
+    opacity: 0;
+    transform: translateY(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
-/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
-.ExternalClass {
-  width: 100%;
-  line-height: 100%; }
-  .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
-    line-height: 100%; }
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px); }
+  40% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
 
-/* Force Hotmail to display emails at full width */
-/* Force Hotmail to display normal line spacing.*/
-#backgroundTable {
-  margin: 0;
-  padding: 0;
-  width: 100% !important;
-  line-height: 100% !important; }
+.fadeInDown2 {
+  animation-name: fadeInDown2;
+  -webkit-animation-name: fadeInDown2;
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s; }
 
-img {
-  outline: none;
-  text-decoration: none;
-  border: none;
-  -ms-interpolation-mode: bicubic; }
+@keyframes fadeInDown2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px); }
+  50% {
+    opacity: 0;
+    transform: translateY(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
-a img {
-  border: none; }
+@-webkit-keyframes fadeInDown2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px); }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
 
-.image_fix {
-  display: block; }
+.fadeInDown3 {
+  animation-name: fadeInDown3;
+  -webkit-animation-name: fadeInDown3;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s; }
 
-p {
-  margin: 0px 0px !important; }
+@keyframes fadeInDown3 {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px); }
+  60% {
+    opacity: 0;
+    transform: translateY(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
-table {
-  border-collapse: collapse;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt; }
-  table td {
-    border-collapse: collapse; }
+@-webkit-keyframes fadeInDown3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px); }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
 
-a {
-  color: #0a8cce;
-  text-decoration: none;
-  text-decoration: none !important; }
-
-/*STYLES*/
-table[class=full] {
-  width: 100%;
-  clear: both; }
-
-h1 {
-  font-size: 26px; }
-
+/* -------------------------------------
+RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
 /*IPAD STYLES*/
 @media only screen and (max-width: 640px) {
   a[href^="tel"], a[href^="sms"] {
@@ -217,6 +245,68 @@ h1 {
     display: none !important; }
   td[class=padding-bottom25] {
     padding-bottom: 25px !important; } }
+
+/* Client-specific Styles */
+#outlook a {
+  padding: 0; }
+
+/* Force Outlook to provide a "view in browser" menu link. */
+body {
+  width: 100% !important;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0; }
+
+/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+.ExternalClass {
+  width: 100%;
+  line-height: 100%; }
+  .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%; }
+
+/* Force Hotmail to display emails at full width */
+/* Force Hotmail to display normal line spacing.*/
+#backgroundTable {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  line-height: 100% !important; }
+
+img {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  -ms-interpolation-mode: bicubic; }
+
+a img {
+  border: none; }
+
+.image_fix {
+  display: block; }
+
+p {
+  margin: 0px 0px !important; }
+
+table {
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt; }
+  table td {
+    border-collapse: collapse; }
+
+a {
+  color: #0a8cce;
+  text-decoration: none;
+  text-decoration: none !important; }
+
+/*STYLES*/
+table[class=full] {
+  width: 100%;
+  clear: both; }
+
+h1 {
+  font-size: 26px; }
 
 /* ANIMATION */
 .fadeInDown {
