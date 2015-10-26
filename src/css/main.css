@@ -2,45 +2,6 @@
     CONFIGURE YOUR VARIABLES
 ------------------------------------- */
 /* -------------------------------------
-    GLOBAL RESETS
-------------------------------------- */
-table, td, div, a {
-  box-sizing: border-box; }
-
-img {
-  -ms-interpolation-mode: bicubic;
-  max-width: 100%; }
-
-body {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 14px;
-  height: 100% !important;
-  line-height: 1.6em;
-  margin: 0;
-  padding: 0;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  width: 100% !important; }
-
-table {
-  border-collapse: separate !important;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt; }
-
-td {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 14px;
-  vertical-align: top;
-  border-collapse: collapse; }
-
-.ExternalClass {
-  width: 100%; }
-
-.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
-  line-height: 100%; }
-
-/* -------------------------------------
     TYPOGRAPHY
 ------------------------------------- */
 h1,
@@ -256,89 +217,17 @@ a {
     opacity: 1;
     -webkit-transform: translateY(0); } }
 
-/* -------------------------------------
-RESPONSIVE AND MOBILE FRIENDLY STYLES
-------------------------------------- */
-/*IPAD STYLES*/
-@media only screen and (max-width: 640px) {
-  a[href^="tel"], a[href^="sms"] {
-    text-decoration: none;
-    color: #0a8cce;
-    /* or whatever your want */
-    pointer-events: none;
-    cursor: default; }
-  table[class="hidden"] {
-    display: none !important; }
-  .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
-    text-decoration: default;
-    color: #0a8cce !important;
-    pointer-events: auto;
-    cursor: default; }
-  table[class=container] {
-    width: 440px !important;
-    text-align: center !important; }
-  table[class=devicewidthinner] {
-    width: 420px !important;
-    text-align: center !important; }
-  img[class=colimg2] {
-    width: 300px !important;
-    height: 240px !important; }
-  img[class=banner] {
-    width: 440px !important;
-    height: 200px !important; }
-  td[class=mobile-hide], table[class=mobile-hide] {
-    display: none !important; } }
-
-/*IPHONE STYLES*/
-@media only screen and (max-width: 480px) {
-  a[href^="tel"], a[href^="sms"] {
-    text-decoration: none;
-    color: #0a8cce;
-    /* or whatever your want */
-    pointer-events: none;
-    cursor: default; }
-  table[class=tableImage] {
-    background-image: none !important; }
-  td[class="hidden"] {
-    display: none !important; }
-  .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
-    text-decoration: default;
-    color: #0a8cce !important;
-    pointer-events: auto;
-    cursor: default; }
-  table[class=container] {
-    width: 280px !important;
-    text-align: center !important; }
-  table[class=tableImage] {
-    width: 240px !important; }
-  table[class=devicewidthinner] {
-    width: 260px !important;
-    text-align: center !important; }
-  img[class=banner] {
-    width: 280px !important;
-    height: 150px !important; }
-  img[class=logo] {
-    width: 230px !important;
-    height: 43px !important; }
-  img[class=colimg2] {
-    width: 260px !important;
-    height: 224px !important; }
-  td[class=mobile-hide], table[class=mobile-hide] {
-    display: none !important; }
-  td[class=padding-bottom25] {
-    padding-bottom: 25px !important; } }
-
 /* Client-specific Styles */
 #outlook a {
   padding: 0; }
 
 /* Force Outlook to provide a "view in browser" menu link. */
 body {
-  background-color: #CCCCCC; }
-
-.body {
-  background-color: #CCCCCC;
-  width: 100%; }
+  width: 100% !important;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0; }
 
 /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
 .ExternalClass {
@@ -347,21 +236,13 @@ body {
   .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
     line-height: 100%; }
 
+/* Force Hotmail to display emails at full width */
+/* Force Hotmail to display normal line spacing.*/
 #backgroundTable {
   margin: 0;
   padding: 0;
   width: 100% !important;
   line-height: 100% !important; }
-
-/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-.container {
-  display: block;
-  margin: 0 auto !important;
-  /* makes it centered */
-  max-width: 580px;
-  padding: 0px;
-  width: auto !important;
-  width: 580px; }
 
 img {
   outline: none;
@@ -395,5 +276,52 @@ table[class=full] {
   width: 100%;
   clear: both; }
 
-h1 {
-  font-size: 26px; }
+/*IPAD STYLES*/
+@media only screen and (max-width: 640px) {
+  a[href^="tel"], a[href^="sms"] {
+    text-decoration: none;
+    color: #0a8cce;
+    /* or whatever your want */
+    pointer-events: none;
+    cursor: default; }
+  .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+    text-decoration: default;
+    color: #0a8cce !important;
+    pointer-events: auto;
+    cursor: default; }
+  table[class=devicewidth] {
+    width: 440px !important;
+    text-align: center !important; }
+  table[class=devicewidthinner] {
+    width: 420px !important;
+    text-align: center !important; }
+  img[class=banner], img[class=colimg2] {
+    width: 440px !important;
+    height: 220px !important; } }
+
+/*IPHONE STYLES*/
+@media only screen and (max-width: 480px) {
+  a[href^="tel"], a[href^="sms"] {
+    text-decoration: none;
+    color: #0a8cce;
+    /* or whatever your want */
+    pointer-events: none;
+    cursor: default; }
+  .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+    text-decoration: default;
+    color: #0a8cce !important;
+    pointer-events: auto;
+    cursor: default; }
+  table[class=devicewidth] {
+    width: 280px !important;
+    text-align: center !important; }
+  table[class=devicewidthinner] {
+    width: 260px !important;
+    text-align: center !important; }
+  img[class=banner], img[class=colimg2] {
+    width: 280px !important;
+    height: 140px !important; }
+  td[class=mobile-hide] {
+    display: none !important; }
+  td[class="padding-bottom25"] {
+    padding-bottom: 25px !important; } }
