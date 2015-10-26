@@ -23,7 +23,7 @@ p, span, font, td, div {
 line-height: 100%;
 }
 }
-#backgroundTable {
+.backgroundTable {
 margin: 0;
 padding: 0;
 width: 100% !important;
@@ -38,6 +38,7 @@ max-width: $width;
 padding: 0px;
 width: auto !important;
 width: $width;
+background-color: $color-content;
 }
 img {
 outline: none;
@@ -67,13 +68,4 @@ a {
 color: #0a8cce;
 text-decoration: none;
 text-decoration: none !important;
-}
-/*STYLES*/
-table[class=full] {
-width: 100%;
-clear: both;
-border-spacing:0; /*this should fix the spacing problem*/
-}
-h1 {
-font-size: 26px;
 }
