@@ -2,6 +2,63 @@
     CONFIGURE YOUR VARIABLES
 ------------------------------------- */
 /* -------------------------------------
+    GLOBAL RESETS
+------------------------------------- */
+table,
+td,
+div,
+a {
+  box-sizing: border-box; }
+
+img {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  -ms-interpolation-mode: bicubic; }
+
+a img {
+  border: none; }
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  height: 100% !important;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  width: 100% !important; }
+
+/* Client-specific Styles */
+#outlook a {
+  padding: 0; }
+
+.ExternalClass {
+  width: 100%; }
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%; }
+
+table {
+  border-collapse: collapse !important;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt; }
+
+table {
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt; }
+  table td {
+    border-collapse: collapse; }
+
+/* -------------------------------------
     TYPOGRAPHY
 ------------------------------------- */
 h1,
@@ -27,7 +84,7 @@ h3 {
   font-size: 18px; }
 
 h4 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500; }
 
 p,
@@ -51,37 +108,21 @@ a {
 /* -------------------------------------
     BUTTONS
 ------------------------------------- */
-.btn {
-  width: 100%; }
-  .btn > tr > td {
-    padding-bottom: 15px; }
-  .btn table {
-    width: auto; }
-  .btn table td {
-    background-color: #ffffff;
-    border-radius: 5px;
-    text-align: center; }
-  .btn a {
-    background-color: #ffffff;
-    border: solid 1px #348eda;
-    border-radius: 5px;
-    color: #348eda;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0;
-    padding: 12px 25px;
-    text-decoration: none !important;
-    text-transform: capitalize; }
-
-.btn-primary table td {
+.emailButton {
+  border-radius: 5px;
   background-color: #348eda; }
 
-.btn-primary a {
-  background-color: #348eda;
-  border-color: #348eda;
-  color: #ffffff; }
+.emailButtonContent {
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  padding-left: 30px; }
+
+.emailButtonContent a {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none; }
 
 .btn-secondary table td {
   background-color: transparent; }
@@ -287,13 +328,17 @@ RESPONSIVE AND MOBILE FRIENDLY STYLES
   td[class=mobile-hide], table[class=mobile-hide] {
     display: none !important; }
   td[class=padding-bottom25] {
-    padding-bottom: 25px !important; } }
+    padding-bottom: 25px !important; }
+  table[class=emailButton] {
+    max-width: 600px !important;
+    width: 100% !important; }
+  table[class=emailButton] a {
+    display: block !important;
+    font-size: 18px !important; } }
 
-/* Client-specific Styles */
-#outlook a {
-  padding: 0; }
-
-/* Force Outlook to provide a "view in browser" menu link. */
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
 body {
   background-color: #CCCCCC;
   width: 100% !important;
@@ -306,58 +351,22 @@ body {
   background-color: #CCCCCC;
   width: 100%; }
 
-/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
-.ExternalClass {
-  width: 100%;
-  line-height: 100%; }
-  .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
-    line-height: 100%; }
-
+/* Main Table Full Width 100% */
 .backgroundTable {
   margin: 0;
   padding: 0;
   width: 100% !important;
   line-height: 100% !important;
-  border-collapse: collapse !important; }
+  border-collapse: collapse !important;
+  background-color: #CCCCCC; }
 
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
   display: block;
   margin: 0 auto !important;
   /* makes it centered */
-  max-width: 600px;
-  padding: 0px;
-  width: auto !important;
-  width: 600px; }
-
-img {
-  outline: none;
-  text-decoration: none;
-  border: none;
-  -ms-interpolation-mode: bicubic; }
-
-a img {
-  border: none; }
-
-.image_fix {
-  display: block; }
-
-p {
-  margin: 0px 0px !important; }
-
-table {
-  border-collapse: collapse !important;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt; }
-
-table {
-  border-collapse: collapse;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt; }
-  table td {
-    border-collapse: collapse; }
-
-a {
-  color: #0a8cce;
-  text-decoration: none;
-  text-decoration: none !important; }
+  max-width: 620px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  width: 620px;
+  background-color: #FFFFFF; }

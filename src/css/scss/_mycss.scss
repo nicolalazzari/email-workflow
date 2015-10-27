@@ -1,8 +1,7 @@
-/* Client-specific Styles */
-#outlook a {
-padding: 0;
-}
-/* Force Outlook to provide a "view in browser" menu link. */
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+
 body {
 background-color: $grey;
 width: 100% !important;
@@ -11,61 +10,31 @@ width: 100% !important;
 margin: 0;
 padding: 0;
 }
+
 .body {
 background-color: $grey;
 width: 100%;
 }
-/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
-.ExternalClass {
-width: 100%;
-line-height: 100%;
-p, span, font, td, div {
-line-height: 100%;
-}
-}
+
+/* Main Table Full Width 100% */
 .backgroundTable {
 margin: 0;
 padding: 0;
 width: 100% !important;
 line-height: 100% !important;
 border-collapse: collapse !important;
+background-color: $grey;
 }
+
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
 display: block;
 margin: 0 auto !important; /* makes it centered */
-max-width: $width;
-padding: 0px;
-width: auto !important;
-width: $width;
+max-width: $width+($padding*2);
+padding-left:10px !important;
+padding-right:10px !important;
+width: $width+($padding*2);
 background-color: $color-content;
 }
-img {
-outline: none;
-text-decoration: none;
-border: none;
--ms-interpolation-mode: bicubic;
-}
-a img {
-border: none;
-}
-.image_fix {
-display: block;
-}
-p {
-margin: 0px 0px !important;
-}
-table { border-collapse:collapse !important; mso-table-lspace:0pt; mso-table-rspace:0pt; }
-table {
-td {
-border-collapse: collapse;
-}
-border-collapse: collapse;
-mso-table-lspace: 0pt;
-mso-table-rspace: 0pt;
-}
-a {
-color: #0a8cce;
-text-decoration: none;
-text-decoration: none !important;
-}
+
+

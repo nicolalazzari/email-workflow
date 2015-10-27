@@ -2,12 +2,11 @@
 RESPONSIVE AND MOBILE FRIENDLY STYLES
 ------------------------------------- 
 /*IPAD STYLES*/
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) {
   a {
     &[href^="tel"], &[href^="sms"] {
       text-decoration: none;
-      color: #0a8cce;
-      /* or whatever your want */
+      color: #0a8cce;      /* or whatever your want */
       pointer-events: none;
       cursor: default;
     }
@@ -49,12 +48,11 @@ RESPONSIVE AND MOBILE FRIENDLY STYLES
 }
 
 /*IPHONE STYLES*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width:480px) {
   a {
     &[href^="tel"], &[href^="sms"] {
       text-decoration: none;
-      color: #0a8cce;
-      /* or whatever your want */
+      color: #0a8cce;      /* or whatever your want */
       pointer-events: none;
       cursor: default;
     }
@@ -106,4 +104,15 @@ RESPONSIVE AND MOBILE FRIENDLY STYLES
   td[class=padding-bottom25] {
     padding-bottom: 25px !important;
   }
+  table[class=emailButton] {
+            max-width:600px !important;
+            width:100% !important;
+        }
+
+  table[class=emailButton]  a {
+            display:block !important;
+            font-size:18px !important;
+        }
+
 }
+  

@@ -2,10 +2,24 @@
     GLOBAL RESETS
 ------------------------------------- */
 
-img {
-  -ms-interpolation-mode: bicubic;
-  max-width: 100%;
+table,
+td,
+div,
+a {
+  box-sizing: border-box;
 }
+
+img {
+outline: none;
+text-decoration: none;
+border: none;
+-ms-interpolation-mode: bicubic;
+}
+
+a img {
+border: none;
+}
+
 body {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -21,9 +35,34 @@ body {
 
 
 // External class fix for Outlook.com
+
+/* Client-specific Styles */
+#outlook a {
+padding: 0;
+}
+// External class fix for Outlook.com
 .ExternalClass {
   width: 100%;
 }
-.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
   line-height: 100%;
 }
+
+// Make sure all tables have defaults 
+table { border-collapse:collapse !important; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+table {
+td {
+border-collapse: collapse;
+}
+border-collapse: collapse;
+mso-table-lspace: 0pt;
+mso-table-rspace: 0pt;
+}
+
+

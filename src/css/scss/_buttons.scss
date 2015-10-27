@@ -2,61 +2,29 @@
     BUTTONS
 ------------------------------------- */
 
-.btn {
-  width: 100%;
-
-  > tr > td {
-    padding-bottom: 15px;
-  }
-
-  table {
-    width: auto;
-  }
-
-  table td {
-    background-color: #ffffff;
-    border-radius: $btn-br;
-    text-align: center;
-  }
-
-  a{
-    background-color: #ffffff;
-    border: solid 1px $primary-color;
-    border-radius: $btn-br;
-    color: $primary-color;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0;
-    padding: 12px 25px;
-    text-decoration: none !important;
-    text-transform: capitalize;
-  }
-}
-
 // Primary call to action button
-.btn-primary {
-
-  table td {
-    background-color: $primary-color;
-  }
-
-  a{
-    background-color: $primary-color;
-    border-color: $primary-color;
-    color: #ffffff;
-  }
+.emailButton {
+  border-radius: $btn-br;
+  background-color: $primary-color;
 }
-
+.emailButtonContent {
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+}
+.emailButtonContent a {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
 // Secondary button
 .btn-secondary {
-
   table td {
     background-color: transparent;
   }
-
-  a{
+  a {
     background-color: transparent;
     border-color: $primary-color;
     color: $primary-color;

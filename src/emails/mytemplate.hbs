@@ -4,7 +4,7 @@ subject: myStandardTemplate
 ---
 <span class="preheader">CHECK TEST. Some clients will show this text as a preview.</span>
 <!-- Start of header -->
-<table class="backgroundTable" align="center">
+<table class="backgroundTable" align="center"  cellpadding="0" cellspacing="0" border="0" >
     <tbody>
         <tr>
             <td>
@@ -70,7 +70,7 @@ subject: myStandardTemplate
 </table>
 <!-- End of Header -->
 <!-- Start of main-banner -->
-<table class="backgroundTable" align="center">
+<table class="backgroundTable" align="center"  cellpadding="0" cellspacing="0" border="0">
     <tbody>
         <tr>
             <td>
@@ -180,21 +180,17 @@ subject: myStandardTemplate
 </table>
 <!-- End of Plain Text -->
 <!-- Start Main -->
-<table class="backgroundTable" align="center">
+<table cellpadding="0" cellspacing="0" class="backgroundTable" align="center">
     <tbody>
         <tr>
             <td align="center">
                 <table cellpadding="0" cellspacing="0" border="0" align="center" class="container">
                     <tbody>
                         <tr>
-                            <td width="100%" align="center">
-                                <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="container">
-                                    <tbody>
-                                        {{{ button type="primary" align="center" url="http://www.leemunroe.com" title="Call to action" }}}
-                                    </tbody>
-                                </table>
+                            <td>
+                        {{{ button type="primary" align="center" url="http://www.leemunroe.com" title="Call to action" }}}
                             </td>
-                        </tr>
+                        </tr>    
                     </tbody>
                 </table>
             </td>
