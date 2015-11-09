@@ -4,73 +4,132 @@
 /* -------------------------------------
     GLOBAL RESETS
 ------------------------------------- */
-table,
-td,
-div,
+table {
+  box-sizing: border-box;
+  border-collapse: collapse !important;
+  border-collapse: collapse;
+  mso-table-lspace: 0;
+  mso-table-rspace: 0; }
+  table td {
+    border-collapse: collapse; }
+
+td {
+  box-sizing: border-box; }
+
+div {
+  box-sizing: border-box; }
+
 a {
   box-sizing: border-box; }
+  a img {
+    border: none; }
 
 img {
   outline: none;
   text-decoration: none;
   border: none;
-  -ms-interpolation-mode: bicubic; }
-
-a img {
-  border: none; }
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  padding-bottom: 6px !important; }
 
 body {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
   font-size: 14px;
   height: 100% !important;
   line-height: 1.6em;
   margin: 0;
   padding: 0;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
   width: 100% !important; }
 
-/* Client-specific Styles */
+.ExternalClass {
+  width: 100%;
+  line-height: 100%; }
+  .ExternalClass p {
+    line-height: 100%; }
+  .ExternalClass span {
+    line-height: 100%; }
+  .ExternalClass font {
+    line-height: 100%; }
+  .ExternalClass td {
+    line-height: 100%; }
+  .ExternalClass div {
+    line-height: 100%; }
+
+p {
+  margin: 0 0 !important; }
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important; }
+
 #outlook a {
   padding: 0; }
 
-.ExternalClass {
+/* -------------------------------------
+BODY & CONTAINER
+------------------------------------- */
+/* TEST TEST */
+body {
+  background-color: #cccccc;
+  width: 100% !important;
+  margin: 0;
+  padding: 0; }
+
+.body {
+  background-color: #cccccc;
   width: 100%; }
 
-.ExternalClass,
-.ExternalClass p,
-.ExternalClass span,
-.ExternalClass font,
-.ExternalClass td,
-.ExternalClass div {
-  line-height: 100%; }
-
-table {
+.backgroundTable {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  line-height: 100% !important;
   border-collapse: collapse !important;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt; }
+  background-color: #cccccc; }
 
-table {
-  border-collapse: collapse;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt; }
-  table td {
-    border-collapse: collapse; }
+.content {
+  width: 600px;
+  max-width: 600px !important;
+  background-color: #ffffff; }
+
+.col {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 18px; }
+
+.col-footer {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 18px;
+  background-color: #cccccc;
+  text-align: center; }
 
 /* -------------------------------------
-    TYPOGRAPHY
+TYPOGRAPHY
 ------------------------------------- */
-h1,
-h2,
-h3,
-h4 {
-  color: #565656 !important;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 400;
-  line-height: 1.4em;
+h1, h2, h3, h4 {
+  color: #348eda !important;
+  margin: 0 !important;
+  font-weight: normal;
+  line-height: 1.2; }
+
+p, ul, ol {
+  font-size: 14px;
+  font-weight: normal;
   margin: 0;
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
+
+body {
+  color: #565656;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.body {
+  color: #565656;
+  font-family: Arial, Helvetica, sans-serif; }
 
 h1 {
   font-size: 38px;
@@ -87,50 +146,84 @@ h4 {
   font-size: 12px;
   font-weight: 500; }
 
-p,
-ul,
-ol {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-  margin-bottom: 15px; }
-  p li,
-  ul li,
-  ol li {
-    list-style-position: inside;
-    margin-left: 5px; }
+p li {
+  list-style-position: inside;
+  margin-left: 5px; }
+
+ul li {
+  list-style-position: inside;
+  margin-left: 5px; }
+
+ol li {
+  list-style-position: inside;
+  margin-left: 5px; }
 
 a {
   color: #348eda;
   text-decoration: underline; }
+  a.read-more {
+    color: #348eda !important;
+    text-decoration: none !important;
+    line-height: 2em;
+    padding-bottom: 5px;
+    padding-top: 0;
+    margin: 0;
+    text-align: left; }
 
-/* -------------------------------------
-    BUTTONS
-------------------------------------- */
+.subtitle {
+  font-family: inherit !important, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #565656;
+  padding-bottom: 6px; }
+
+.col-copy {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left; }
+
+.padding-copy {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+  padding-left: 8px !important;
+  padding-right: 8px !important; }
+
+.inline-table .col-copy {
+  font-size: 14px;
+  line-height: 1.2 !important; }
+
 .emailButton {
   border-radius: 5px;
-  background-color: #348eda; }
+  background-color: #f5a623;
+  width: 60%; }
 
 .emailButtonContent {
   padding-top: 15px;
   padding-right: 30px;
   padding-bottom: 15px;
   padding-left: 30px; }
+  .emailButtonContent a {
+    color: #ffffff;
+    font-size: 21px !important;
+    line-height: auto;
+    font-weight: normal;
+    text-decoration: none; }
 
-.emailButtonContent a {
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none; }
-
-.btn-secondary table td {
-  background-color: transparent; }
-
-.btn-secondary a {
-  background-color: transparent;
-  border-color: #348eda;
-  color: #348eda; }
+.btn-secondary {
+  background-color: #ff9900 !important; }
+  .btn-secondary a {
+    background-color: transparent;
+    border-color: transparent;
+    color: #565656 !important;
+    font-size: 14px !important;
+    line-height: auto; }
+  .btn-secondary .emailButtonContent {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; }
 
 /* -------------------------------------
     OTHER STYLES THAT MIGHT BE USEFUL
@@ -170,6 +263,15 @@ a {
   mso-hide: all;
   visibility: hidden;
   width: 0; }
+
+/* -------------------------------------
+DIVIDER
+------------------------------------- */
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc); }
 
 /* -------------------------------------
   ANIMATION
@@ -259,114 +361,157 @@ a {
     -webkit-transform: translateY(0); } }
 
 /* -------------------------------------
-RESPONSIVE AND MOBILE FRIENDLY STYLES
-------------------------------------- 
+            RESPONSIVE DESIGN
+            ------------------------------------- */
+/* TEST TEST */
+/* MOBILE ONLY */
+.mobile-only {
+  display: none;
+  max-height: 0px;
+  mso-hide: all;
+  overflow: hidden;
+  visibility: hidden; }
+
 /*IPAD STYLES*/
 @media only screen and (max-width: 640px) {
-  a[href^="tel"], a[href^="sms"] {
+  table[class=col2],
+  table[class=col3],
+  table[class=col4] {
+    width: 100% !important; }
+  a[href^="tel"],
+  a[href^="sms"] {
     text-decoration: none;
     color: #0a8cce;
     /* or whatever your want */
     pointer-events: none;
     cursor: default; }
-  table[class="hidden"] {
-    display: none !important; }
-  .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+  .mobile_link a[href^="tel"],
+  .mobile_link a[href^="sms"] {
     text-decoration: default;
     color: #0a8cce !important;
     pointer-events: auto;
     cursor: default; }
+  /* FULL-WIDTH IMAGES */
+  img[class="img-max"] {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important; }
   table[class=container] {
-    width: 440px !important;
+    width: 460px !important;
     text-align: center !important; }
-  table[class=devicewidthinner] {
+  table[class=force-row] {
     width: 420px !important;
-    text-align: center !important; }
-  img[class=colimg2] {
-    width: 300px !important;
-    height: 240px !important; }
-  img[class=banner] {
+    max-width: 100% !important; }
+  .cols-wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  td[class=cols-wrapper] {
+    padding: 10px !important; }
+  td[class=col] {
+    padding: 0px !important; }
+  table[class=content] {
     width: 440px !important;
-    height: 200px !important; }
-  td[class=mobile-hide], table[class=mobile-hide] {
-    display: none !important; } }
+    text-align: center !important; }
+  img[class=img-hero] {
+    width: 420px !important;
+    height: auto !important;
+    display: block !important; }
+  *[class~="mobile-only"] {
+    display: block !important;
+    max-height: none !important;
+    overflow: visible !important;
+    visibility: visible !important; }
+  *[class~="mobile-hide"] {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    visibility: hidden !important;
+    width: 0 !important; }
+  *[class~="mobile-expanding"] {
+    /* for elements that you don't want to treat as block elements */
+    clear: both !important;
+    float: none !important;
+    width: 100% !important; }
+  *[class~="mobile-block-full-width"] {
+    clear: both !important;
+    display: block !important;
+    float: none !important;
+    height: auto !important;
+    width: 100% !important; }
+  table[class=emailButton] {
+    width: 90% !important; } }
 
 /*IPHONE STYLES*/
 @media only screen and (max-width: 480px) {
-  a[href^="tel"], a[href^="sms"] {
+  table[class=col2],
+  table[class=col3],
+  table[class=col4] {
+    width: 100% !important; }
+  a[href^="tel"],
+  a[href^="sms"] {
     text-decoration: none;
     color: #0a8cce;
     /* or whatever your want */
     pointer-events: none;
     cursor: default; }
-  table[class=tableImage] {
-    background-image: none !important; }
-  td[class="hidden"] {
-    display: none !important; }
-  .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+  .mobile_link a[href^="tel"],
+  .mobile_link a[href^="sms"] {
     text-decoration: default;
     color: #0a8cce !important;
     pointer-events: auto;
     cursor: default; }
+  /* FULL-WIDTH IMAGES */
+  img[class=img-max] {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important; }
   table[class=container] {
+    width: 100% !important;
+    text-align: center !important; }
+  table[class=content] {
     width: 280px !important;
     text-align: center !important; }
-  table[class=tableImage] {
-    width: 240px !important; }
-  table[class=devicewidthinner] {
+  table[class=force-row] {
     width: 260px !important;
     text-align: center !important; }
-  img[class=banner] {
-    width: 280px !important;
-    height: 150px !important; }
-  img[class=logo] {
-    width: 230px !important;
-    height: 43px !important; }
-  img[class=colimg2] {
+  table[class=col] {
     width: 260px !important;
-    height: 224px !important; }
-  td[class=mobile-hide], table[class=mobile-hide] {
-    display: none !important; }
-  td[class=padding-bottom25] {
-    padding-bottom: 25px !important; }
-  table[class=emailButton] {
-    max-width: 600px !important;
-    width: 100% !important; }
-  table[class=emailButton] a {
+    text-align: center !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+  img[class=img-hero] {
+    width: 260px !important;
+    height: auto !important;
+    display: block !important; }
+  *[class~="mobile-only"] {
     display: block !important;
-    font-size: 18px !important; } }
-
-/* -------------------------------------
-    BODY & CONTAINER
-------------------------------------- */
-body {
-  background-color: #CCCCCC;
-  width: 100% !important;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  margin: 0;
-  padding: 0; }
-
-.body {
-  background-color: #CCCCCC;
-  width: 100%; }
-
-/* Main Table Full Width 100% */
-.backgroundTable {
-  margin: 0;
-  padding: 0;
-  width: 100% !important;
-  line-height: 100% !important;
-  border-collapse: collapse !important;
-  background-color: #CCCCCC; }
-
-/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-.container {
-  display: block;
-  margin: 0 auto !important;
-  /* makes it centered */
-  max-width: 620px;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-  width: 620px;
-  background-color: #FFFFFF; }
+    max-height: none !important;
+    overflow: visible !important;
+    visibility: visible !important; }
+  *[class~="mobile-hide"] {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    visibility: hidden !important;
+    width: 0 !important; }
+  *[class~="mobile-expanding"] {
+    /* for elements that you don't want to treat as block elements */
+    clear: both !important;
+    float: none !important;
+    width: 100% !important; }
+  *[class~="mobile-block-full-width"] {
+    clear: both !important;
+    display: block !important;
+    float: none !important;
+    height: auto !important;
+    width: 100% !important; }
+  table[class=emailButton] {
+    width: 90% !important; }
+  table[class=inline-row] {
+    width: 200px !important; } }

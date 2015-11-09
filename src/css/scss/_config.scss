@@ -2,11 +2,25 @@
     CONFIGURE YOUR VARIABLES
 ------------------------------------- */
 
+//colors
+$color_chicago_approx: #565656;
+$color_curious_blue_approx: #348eda;
+$color_celeste_approx: #cccccc;
+$white: #ffffff;
+//fonts family
+$font_0: Arial;
+$font_1: Helvetica;
+$font_2: sans-serif;
+$sans_serif: $font_0, $font_1, $font_2;
+//
 $padding: 10px; // For consistent padding
 $grey: #CCCCCC; // Background color
-$color-content: #FFFFFF; // Content Background Coloro
-$width: 600px; // Width of the content area
+$width: 580px; // Width of the content area
+$color-content: #FFFFFF; // Content Background Color
+$color-footer: #CCCCCC; // Footer Background Color;
 $br: 3px; // Border radius
 $btn-br: 5px; // Border radius
-$primary-color: #348eda; // Primary color for buttons and links
-$font-color: #565656; // Default font color
+$primary-color: #348EDA; // Primary color for buttons and links
+$secondary-color: #FF9900; // Secondary color for buttons and links
+
+

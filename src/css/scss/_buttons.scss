@@ -1,32 +1,41 @@
-/* -------------------------------------
-    BUTTONS
-------------------------------------- */
+//colors
+$color_sea_buckthorn_approx: #f5a623;
+$white: #ffffff;
+$color_california_approx: #ff9900;
+$color_chicago_approx: #565656;
 
-// Primary call to action button
 .emailButton {
-  border-radius: $btn-br;
-  background-color: $primary-color;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 5px;
+  background-color: $color_sea_buckthorn_approx;
+  width: 60%;
 }
 .emailButtonContent {
   padding-top: 15px;
   padding-right: 30px;
   padding-bottom: 15px;
   padding-left: 30px;
-}
-.emailButtonContent a {
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-}
-// Secondary button
-.btn-secondary {
-  table td {
-    background-color: transparent;
+  a {
+    color: $white;
+    font-size: 21px !important;
+    line-height: auto;
+    font-weight: normal;
+    text-decoration: none;
   }
+}
+.btn-secondary {
+  background-color: $color_california_approx !important;
   a {
     background-color: transparent;
-    border-color: $primary-color;
-    color: $primary-color;
+    border-color: transparent;
+    color: $color_chicago_approx !important;
+    font-size: 14px !important;
+    line-height: auto;
+  }
+  .emailButtonContent {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
   }
 }
