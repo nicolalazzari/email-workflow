@@ -3,12 +3,20 @@
 ------------------------------------- */
 
 //colors
-$color_chicago_approx: #565656;
-$color_curious_blue_approx: #348eda;
-$color_celeste_approx: #cccccc;
+
+$color_scorpion: #565656;
+$color_curious_blue: #348EDA;
+$color_silver: #cccccc;
 $white: #ffffff;
+
+// my variables
+$body_text_color: $color_scorpion;
+$link_text_color: $color_curious_blue; 
+
+
+
 //fonts family
-$font_0: Arial;
+$font_0: 'Open Sans';
 $font_1: Helvetica;
 $font_2: sans-serif;
 $sans_serif: $font_0, $font_1, $font_2;

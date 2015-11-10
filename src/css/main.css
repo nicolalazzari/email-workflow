@@ -33,14 +33,6 @@ img {
   padding: 0 !important;
   padding-bottom: 6px !important; }
 
-body {
-  font-size: 14px;
-  height: 100% !important;
-  line-height: 1.6em;
-  margin: 0;
-  padding: 0;
-  width: 100% !important; }
-
 .ExternalClass {
   width: 100%;
   line-height: 100%; }
@@ -72,29 +64,37 @@ a[x-apple-data-detectors] {
 /* -------------------------------------
 BODY & CONTAINER
 ------------------------------------- */
-/* TEST TEST */
 body {
   background-color: #cccccc;
-  width: 100% !important;
+  width: 100%;
+  height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Open Sans", Helvetica, sans-serif !important; }
 
 .body {
   background-color: #cccccc;
-  width: 100%; }
+  width: 100%;
+  font-family: "Open Sans", Helvetica, sans-serif !important; }
 
 .backgroundTable {
   margin: 0;
   padding: 0;
-  width: 100% !important;
+  width: 100%;
   line-height: 100% !important;
   border-collapse: collapse !important;
   background-color: #cccccc; }
 
 .content {
-  width: 600px;
-  max-width: 600px !important;
+  width: 580px;
+  max-width: 580px !important;
   background-color: #ffffff; }
+
+.cols-wrapper {
+  width: 580px; }
+
+.force-row-full {
+  width: 580px; }
 
 .col {
   padding-left: 12px;
@@ -105,13 +105,17 @@ body {
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 18px;
+  padding-bottom: 30px;
   background-color: #cccccc;
   text-align: center; }
+
+.img-hero {
+  width: 580px; }
 
 /* -------------------------------------
 TYPOGRAPHY
 ------------------------------------- */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h1 span, h2 span, h3 span, h4 span {
   color: #348eda !important;
   margin: 0 !important;
   font-weight: normal;
@@ -125,11 +129,11 @@ p, ul, ol {
 
 body {
   color: #565656;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: "Open Sans", Helvetica, sans-serif; }
 
 .body {
   color: #565656;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: "Open Sans", Helvetica, sans-serif; }
 
 h1 {
   font-size: 38px;
@@ -396,10 +400,7 @@ hr {
     max-width: 100% !important;
     width: 100% !important;
     height: auto !important; }
-  table[class=container] {
-    width: 460px !important;
-    text-align: center !important; }
-  table[class=force-row] {
+  table[class=force-row], table[class="force-row-full"] {
     width: 420px !important;
     max-width: 100% !important; }
   .cols-wrapper {
@@ -474,7 +475,7 @@ hr {
   table[class=content] {
     width: 280px !important;
     text-align: center !important; }
-  table[class=force-row] {
+  table[class=force-row], table[class="force-row-full"] {
     width: 260px !important;
     text-align: center !important; }
   table[class=col] {

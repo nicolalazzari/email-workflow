@@ -38,11 +38,7 @@
             width: 100% !important;
             height:auto !important;
             }
-            table[class=container] {
-            width: 460px!important;
-            text-align: center!important;
-            }
-            table[class=force-row] {
+            table[class=force-row], table[class="force-row-full"] {
             width: 420px !important;
             max-width: 100% !important;
             } 
@@ -129,7 +125,7 @@
             width: 280px!important;
             text-align: center!important;
             }
-            table[class=force-row] {
+            table[class=force-row], table[class="force-row-full"] {
             width: 260px !important;
             text-align:center !important;
             }     
