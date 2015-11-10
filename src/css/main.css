@@ -54,7 +54,7 @@ a[x-apple-data-detectors] {
   color: inherit !important;
   text-decoration: none !important;
   font-size: inherit !important;
-  font-family: inherit !important;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: inherit !important;
   line-height: inherit !important; }
 
@@ -69,13 +69,11 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0;
-  font-family: "Open Sans", Helvetica, sans-serif !important; }
+  padding: 0; }
 
 .body {
   background-color: #cccccc;
-  width: 100%;
-  font-family: "Open Sans", Helvetica, sans-serif !important; }
+  width: 100%; }
 
 .backgroundTable {
   margin: 0;
@@ -105,8 +103,8 @@ body {
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 18px;
-  padding-bottom: 30px;
-  background-color: #cccccc;
+  padding-bottom: 32px;
+  background-color: #565656;
   text-align: center; }
 
 .img-hero {
@@ -115,18 +113,6 @@ body {
 /* -------------------------------------
 TYPOGRAPHY
 ------------------------------------- */
-h1, h2, h3, h4, h1 span, h2 span, h3 span, h4 span {
-  color: #348eda !important;
-  margin: 0 !important;
-  font-weight: normal;
-  line-height: 1.2; }
-
-p, ul, ol {
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-  margin-bottom: 15px; }
-
 body {
   color: #565656;
   font-family: "Open Sans", Helvetica, sans-serif; }
@@ -136,37 +122,76 @@ body {
   font-family: "Open Sans", Helvetica, sans-serif; }
 
 h1 {
+  color: #348EDA !important;
+  margin: 0 !important;
+  line-height: 1.2;
   font-size: 38px;
   text-transform: capitalize;
   font-weight: 300; }
 
 h2 {
+  color: #348EDA !important;
+  margin: 0 !important;
+  font-weight: normal;
+  line-height: 1.2;
   font-size: 24px; }
 
 h3 {
+  color: #348EDA !important;
+  margin: 0 !important;
+  font-weight: normal;
+  line-height: 1.2;
   font-size: 18px; }
 
 h4 {
+  color: #348EDA !important;
+  margin: 0 !important;
+  font-weight: normal;
+  line-height: 1.2;
   font-size: 12px;
   font-weight: 500; }
 
-p li {
-  list-style-position: inside;
-  margin-left: 5px; }
+h1 span, h2 span, h3 span, h4 span {
+  color: #348EDA !important;
+  margin: 0 !important;
+  font-weight: normal;
+  line-height: 1.2; }
 
-ul li {
-  list-style-position: inside;
-  margin-left: 5px; }
+.col_footer h4 {
+  color: #ffffff !important; }
 
-ol li {
-  list-style-position: inside;
-  margin-left: 5px; }
+p {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px; }
+  p li {
+    list-style-position: inside;
+    margin-left: 5px; }
+
+ul {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px; }
+  ul li {
+    list-style-position: inside;
+    margin-left: 5px; }
+
+ol {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px; }
+  ol li {
+    list-style-position: inside;
+    margin-left: 5px; }
 
 a {
-  color: #348eda;
+  color: #348EDA;
   text-decoration: underline; }
   a.read-more {
-    color: #348eda !important;
+    color: #348EDA !important;
     text-decoration: none !important;
     line-height: 2em;
     padding-bottom: 5px;
@@ -175,11 +200,11 @@ a {
     text-align: left; }
 
 .subtitle {
-  font-family: inherit !important, Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
-  color: #565656;
+  color: #348EDA;
   padding-bottom: 6px; }
 
 .col-copy {
@@ -200,7 +225,7 @@ a {
 
 .emailButton {
   border-radius: 5px;
-  background-color: #f5a623;
+  background-color: #F09700;
   width: 60%; }
 
 .emailButtonContent {
@@ -216,11 +241,11 @@ a {
     text-decoration: none; }
 
 .btn-secondary {
-  background-color: #ff9900 !important; }
+  background-color: #6195ED !important; }
   .btn-secondary a {
     background-color: transparent;
     border-color: transparent;
-    color: #565656 !important;
+    color: #ffffff !important;
     font-size: 14px !important;
     line-height: auto; }
   .btn-secondary .emailButtonContent {
@@ -278,96 +303,8 @@ hr {
   background-image: linear-gradient(to right, #ccc, #333, #ccc); }
 
 /* -------------------------------------
-  ANIMATION
-------------------------------------- */
-.fadeInDown {
-  animation-name: fadeInDown;
-  -webkit-animation-name: fadeInDown;
-  animation-duration: 1.2s;
-  -webkit-animation-duration: 1.2s; }
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px); }
-  40% {
-    opacity: 0;
-    transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  40% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0); } }
-
-.fadeInDown2 {
-  animation-name: fadeInDown2;
-  -webkit-animation-name: fadeInDown2;
-  animation-duration: 1.6s;
-  -webkit-animation-duration: 1.6s; }
-
-@keyframes fadeInDown2 {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px); }
-  50% {
-    opacity: 0;
-    transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@-webkit-keyframes fadeInDown2 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0); } }
-
-.fadeInDown3 {
-  animation-name: fadeInDown3;
-  -webkit-animation-name: fadeInDown3;
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s; }
-
-@keyframes fadeInDown3 {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px); }
-  60% {
-    opacity: 0;
-    transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@-webkit-keyframes fadeInDown3 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  60% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0); } }
-
-/* -------------------------------------
             RESPONSIVE DESIGN
             ------------------------------------- */
-/* TEST TEST */
 /* MOBILE ONLY */
 .mobile-only {
   display: none;

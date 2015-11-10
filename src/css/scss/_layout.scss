@@ -2,17 +2,15 @@
 BODY & CONTAINER
 ------------------------------------- */
  body {
-  background-color: $color_celeste_approx;
+  background-color: $full_background_color;
   width: 100%;
   height:100%;
   margin: 0;
   padding: 0;
-  font-family: $sans-serif !important;
 }
 .body {
-  background-color: $color_celeste_approx;
+  background-color: $full_background_color;
   width: 100%;
-  font-family: $sans-serif !important;  
 }
 .backgroundTable {
   margin: 0;
@@ -20,12 +18,12 @@ BODY & CONTAINER
   width: 100%;
   line-height: 100% !important;
   border-collapse: collapse !important;
-  background-color: $color_celeste_approx;
+  background-color: $full_background_color;
 }
 .content {
   width: $width;
   max-width: $width !important;
-  background-color: $white;
+  background-color: $main_background_color;
 }
 .cols-wrapper {
   width: $width;
@@ -34,16 +32,16 @@ BODY & CONTAINER
   width: $width;
 }
 .col {
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 18px;
+  padding-left: $padding;
+  padding-right: $padding;
+  padding-top: $padding + 6px;
 }
 .col-footer {
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 18px;
-  padding-bottom: 30px;
-  background-color: $color_celeste_approx;
+  padding-left: $padding;
+  padding-right: $padding;
+  padding-top: $padding + 6px;
+  padding-bottom: $padding + 20px;
+  background-color: $footer_background_color;
   text-align: center;
 }
 .img-hero {

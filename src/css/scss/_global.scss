@@ -1,8 +1,7 @@
 /* -------------------------------------
     GLOBAL RESETS
 ------------------------------------- */
-//fonts
-$font_0: inherit !important;
+
 
 table {
   //Instead of the line below you could use @include box-sizing($bs)
@@ -37,7 +36,7 @@ img {
   display: block !important;
   margin: 0 !important;
   padding: 0 !important;
-  padding-bottom: 6px !important;
+  padding-bottom: $padding / 2 !important;
 }
 .ExternalClass {
   width: 100%;
@@ -65,7 +64,7 @@ a[x-apple-data-detectors] {
   color: inherit !important;
   text-decoration: none !important;
   font-size: inherit !important;
-  font-family: $font_0;
+  font-family: $sans_serif;
   font-weight: inherit !important;
   line-height: inherit !important;
 }

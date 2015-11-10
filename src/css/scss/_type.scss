@@ -2,86 +2,98 @@
 TYPOGRAPHY
 ------------------------------------- */
 
-//@extend-elements
-//original selectors
-//h1, h2, h3, h4
-%extend_1 {
-  color: $color_curious_blue_approx !important;
-  // font-family: $font_0, $font_1, $font_2;
-  margin: 0 !important;
-  font-weight: normal;
-  line-height: 1.2;
-}
-
-//original selectors
-//p, ul, ol
-%extend_2 {
-  // font-family: $font_0, $font_1, $font_2;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-  margin-bottom: 15px;
-}
 
 
 body {
-  color: $body-text-color;
+  color: $body_text_color;
   font-family: $sans_serif;
   // font-family: sans-serif;
 }
 .body {
-  color: $body-text-color;
+  color: $body_text_color;
   font-family: $sans_serif;
 }
 h1 {
-  @extend %extend_1;
+  color: $h1_text_color !important;
+  // font-family: $font_0, $font_1, $font_2;
+  margin: 0 !important;
+  line-height: 1.2;
   font-size: 38px;
   text-transform: capitalize;
   font-weight: 300;
 }
 h2 {
-  @extend %extend_1;
+  color: $h2_text_color !important;
+  // font-family: $font_0, $font_1, $font_2;
+  margin: 0 !important;
+  font-weight: normal;
+  line-height: 1.2;
   font-size: 24px;
 }
 h3 {
-  @extend %extend_1;
+  color: $h3_text_color !important;
+  // font-family: $font_0, $font_1, $font_2;
+  margin: 0 !important;
+  font-weight: normal;
+  line-height: 1.2;
   font-size: 18px;
 }
 h4 {
-  @extend %extend_1;
+  color: $h1_text_color !important;
+  // font-family: $font_0, $font_1, $font_2;
+  margin: 0 !important;
+  font-weight: normal;
+  line-height: 1.2;
   font-size: 12px;
   font-weight: 500;
 }
 h1 span, h2 span, h3 span, h4 span {
-   @extend %extend_1;
+  color: $h1_text_color !important;
+  // font-family: $font_0, $font_1, $font_2;
+  margin: 0 !important;
+  font-weight: normal;
+  line-height: 1.2;
+}
+.col_footer h4 {
+  color: $footer_text_color !important;
 }
 
 p {
-  @extend %extend_2;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px;
   li {
     list-style-position: inside;
     margin-left: 5px;
+
   }
 }
 ul {
-  @extend %extend_2;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px;
   li {
     list-style-position: inside;
     margin-left: 5px;
   }
 }
 ol {
-  @extend %extend_2;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px;
   li {
     list-style-position: inside;
     margin-left: 5px;
   }
 }
 a {
-  color: $link-color;
+  color: $link_text_color;
   text-decoration: underline;
   &.read-more {
-    color: $color_curious_blue_approx !important;
+    color: $link_text_color !important;
     text-decoration: none !important;
     line-height: 2em;
     padding-bottom: 5px;
@@ -95,7 +107,7 @@ a {
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
-  color: $color_chicago_approx;
+  color: $subtitle_text_color;
   padding-bottom: 6px;
 }
 .col-copy {
