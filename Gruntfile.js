@@ -8,11 +8,11 @@ module.exports = function(grunt) {
       // Re-usable filesystem path variables
       paths: {
         src:        'src',
-        src_img:    'src/img',
+        src_img:    'src',
         dist:       'dist',
         dist_img:   'dist/img',
         preview:    'preview',
-        S3_folder: 'mp-2234'
+        S3_folder:  'MP-0000'
       },
 
       // secrets.json is ignored in git because it contains sensitive data

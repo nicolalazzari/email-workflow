@@ -5,12 +5,12 @@ module.exports = {
       usePrefix: false,
       patterns: [
         {
-          match: /(<img[^>]+[\"'])(\.\.\/src\/img\/)/gi,  // Matches <img * src="../src/img or <img * src='../src/img'
-          replacement: '$1../<%= paths.dist_img %>/'
+          match: /(<img[^>]+[\"'])(\.\.\/img\/)/gi,  // Matches <img * src="../src/img or <img * src='../src/img'
+          replacement: 'test/$1'
         },
         {
-          match: /(url\(*[^)])(\.\.\/src\/img\/)/gi,  // Matches url('../src/img') or url(../src/img) and even url("../src/img")
-          replacement: '$1../<%= paths.dist_img %>/'
+          match: /(url\(*[^)])(\.\.\/img\/)/gi,  // Matches url('../src/img') or url(../src/img) and even url("../src/img")
+          replacement: 'test/$1'
         }
       ]
     },
