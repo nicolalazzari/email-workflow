@@ -1,64 +1,35 @@
-/* -------------------------------------
-    BUTTONS
-------------------------------------- */
-
-.btn {
-  width: 100%;
-
-  > tr > td {
-    padding-bottom: 15px;
-  }
-
-  table {
-    width: auto;
-  }
-
-  table td {
-    background-color: #ffffff;
-    border-radius: $btn-br;
-    text-align: center;
-  }
-
-  a{
-    background-color: #ffffff;
-    border: solid 1px $primary-color;
-    border-radius: $btn-br;
-    color: $primary-color;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0;
-    padding: 12px 25px;
-    text-decoration: none !important;
-    text-transform: capitalize;
+.emailButton {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: $btn_br;
+  background-color: $primary-color;
+  width: 60%;
+}
+.emailButtonContent {
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  a {
+    color: $btn-text-primary-color;
+    font-size: 21px !important;
+    line-height: auto;
+    font-weight: normal;
+    text-decoration: none;
   }
 }
-
-// Primary call to action button
-.btn-primary {
-
-  table td {
-    background-color: $primary-color;
-  }
-
-  a{
-    background-color: $primary-color;
-    border-color: $primary-color;
-    color: #ffffff;
-  }
-}
-
-// Secondary button
 .btn-secondary {
-
-  table td {
+  background-color: $secondary-color !important;
+  a {
     background-color: transparent;
+    border-color: transparent;
+    color: $btn-text-secondary-color !important;
+    font-size: 14px !important;
+    line-height: auto;
   }
-
-  a{
-    background-color: transparent;
-    border-color: $primary-color;
-    color: $primary-color;
+  .emailButtonContent {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
   }
 }

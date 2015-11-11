@@ -7,18 +7,14 @@
 //
 module.exports.button = function (params) {
   return '\
-    <table class="btn btn-' + params.hash.type + '" cellpadding="0" cellspacing="0">\
-      <tr>\
-        <td align="' + params.hash.align + '">\
-          <table cellpadding="0" cellspacing="0">\
-            <tr>\
-              <td>\
-                <a href="' + params.hash.url + '">' + params.hash.title + '</a>\
-              </td>\
-            </tr>\
-          </table>\
+<table align="' + params.hash.align + '" border="0" cellpadding="0" cellspacing="0" class="emailButton btn-' + params.hash.type + '">\
+    <tr>\
+        <td align="' + params.hash.align + '" valign="middle" class="emailButtonContent">\
+            <a href="' + params.hash.url + '" target="_blank">' + params.hash.title + '</a>\
         </td>\
-      </tr>\
-    </table>\
+    </tr>\
+</table>\
   '
 };
+
+
