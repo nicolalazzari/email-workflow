@@ -1,69 +1,177 @@
-/* -------------------------------------
-RESPONSIVE AND MOBILE FRIENDLY STYLES
-------------------------------------- */
-table[class=body] {
-  @media only screen and (max-width:$width+40) {
-    // Type
-    h1, h2, h3, h4 {
-      font-weight: 600 !important;
-    }
-    h1 {
-      font-size: 22px !important;
-    }
-    h2 {
-      font-size: 18px !important;
-    }
-    h3 {
-      font-size: 16px !important;
-    }
-    // Spacing
-    .content, .wrapper {
-      padding: 0px !important;
-    }
-    .container {
-      padding: 0 !important;
-      width: 100% !important;
-    }
-    // Buttons
-    .btn table {
-      width: 100% !important;
-    }
-    // Various Fixing
-    a[href^="tel"], a[href^="sms"] {
-      text-decoration: none;
-      color: #0a8cce;/* or whatever your want */
-      pointer-events: none;
-      cursor: default;
-    }
-    .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
-      text-decoration: default;
-      color: #0a8cce !important;
-      pointer-events: auto;
-      cursor: default;
-    }
-    // Container Resizer
-    table[class=main] {
-      width: 440px !important;
-      text-align: center !important;
-      border: 1px solid red;
-    }
-    table[class=main] {
-      width: 420px !important;
-      text-align: center !important;
-      border: 1px solid orange;
-    }
-  }
-  @media only screen and (max-width:480px) {
-    // Container Resizer
-    table[class=main] {
-      width: 280px !important;
-      text-align: center !important;
-      border: 1px solid red;
-    }
-    table[class=devicewidthinner] {
-      width: 280px !important;
-      text-align: center !important;
-      border: 1px solid orange;
-    }
-  }
-}
+       /* -------------------------------------
+            RESPONSIVE DESIGN
+            ------------------------------------- */
+  
+            /* MOBILE ONLY */
+            .mobile-only {
+            display: none;
+            max-height: 0px;
+            mso-hide: all;
+            overflow: hidden;
+            visibility: hidden;
+            }
+            /*IPAD STYLES*/
+            @media only screen and (max-width: 640px) {
+            table[class=col2], 
+            table[class=col3],
+            table[class=col4] {
+            width:100% !important;
+            }    
+            a[href^="tel"],
+            a[href^="sms"] {
+            text-decoration: none;
+            color: #0a8cce;
+            /* or whatever your want */
+            pointer-events: none;
+            cursor: default;
+            }
+            .mobile_link a[href^="tel"],
+            .mobile_link a[href^="sms"] {
+            text-decoration: default;
+            color: #0a8cce !important;
+            pointer-events: auto;
+            cursor: default;
+            }
+            /* FULL-WIDTH IMAGES */
+            img[class="img-max"]{
+            max-width: 100% !important;
+            width: 100% !important;
+            height:auto !important;
+            }
+            table[class=force-row], table[class="force-row-full"] {
+            width: 420px !important;
+            max-width: 100% !important;
+            } 
+            .cols-wrapper {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            }
+            td[class=cols-wrapper] {padding:10px !important;}
+            td[class=col] {padding:0px !important;}    
+            table[class=content] {
+            width: 440px!important;
+            text-align: center!important;
+            }
+            img[class=img-hero] {
+            width: 420px!important;
+            height: auto!important;
+            display: block !important;
+            }
+            *[class~="mobile-only"] {
+            display: block !important;
+            max-height: none !important;
+            overflow: visible !important;
+            visibility: visible !important;
+            }
+            *[class~="mobile-hide"] { 
+            display: none !important; 
+            height: 0 !important;
+            margin: 0 !important;
+            max-height: 0 !important;
+            overflow: hidden !important;
+            padding: 0 !important;
+            visibility: hidden !important; 
+            width: 0 !important; 
+            }
+            *[class~="mobile-expanding"] { /* for elements that you don't want to treat as block elements */
+            clear: both !important; 
+            float: none !important; 
+            width: 100% !important; 
+            }
+            *[class~="mobile-block-full-width"] { 
+            clear: both !important; 
+            display: block !important;
+            float: none !important; 
+            height: auto !important; 
+            width: 100% !important; 
+            }
+            table[class=emailButton] {
+            width:90% !important;
+            } 
+            }
+            /*IPHONE STYLES*/
+            @media only screen and (max-width: 480px) {
+            table[class=col2], 
+            table[class=col3],
+            table[class=col4] {
+            width:100% !important;
+            }
+            a[href^="tel"],
+            a[href^="sms"] {
+            text-decoration: none;
+            color: #0a8cce;
+            /* or whatever your want */
+            pointer-events: none;
+            cursor: default;
+            }
+            .mobile_link a[href^="tel"],
+            .mobile_link a[href^="sms"] {
+            text-decoration: default;
+            color: #0a8cce !important;
+            pointer-events: auto;
+            cursor: default;
+            }
+            /* FULL-WIDTH IMAGES */
+            img[class=img-max]{
+            max-width: 100% !important;
+            width: 100% !important;
+            height:auto !important;
+            }
+            table[class=container] {
+            width: 100% !important;
+            text-align: center!important;
+            }
+            table[class=content] {
+            width: 280px!important;
+            text-align: center!important;
+            }
+            table[class=force-row], table[class="force-row-full"] {
+            width: 260px !important;
+            text-align:center !important;
+            }     
+            table[class=col] {
+            width:260px !important;
+            text-align:center !important;
+            padding-left:0px !important;
+            padding-right:0px !important;
+            }
+            img[class=img-hero] {
+            width: 260px!important;
+            height: auto!important;
+            display: block !important;
+            }
+            *[class~="mobile-only"] {
+            display: block !important;
+            max-height: none !important;
+            overflow: visible !important;
+            visibility: visible !important;
+            }
+            *[class~="mobile-hide"] { 
+            display: none !important; 
+            height: 0 !important;
+            margin: 0 !important;
+            max-height: 0 !important;
+            overflow: hidden !important;
+            padding: 0 !important;
+            visibility: hidden !important; 
+            width: 0 !important; 
+            }
+            *[class~="mobile-expanding"] { /* for elements that you don't want to treat as block elements */
+            clear: both !important; 
+            float: none !important; 
+            width: 100% !important; 
+            }
+            *[class~="mobile-block-full-width"] { 
+            clear: both !important; 
+            display: block !important;
+            float: none !important; 
+            height: auto !important; 
+            width: 100% !important; 
+            }
+            table[class=emailButton] {
+            width:90% !important;
+            }
+            table[class=inline-row]{
+            width:200px !important;
+            }
+            }
